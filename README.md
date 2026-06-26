@@ -3,3 +3,5 @@
 Trabalho Prático - ADS 501 – Design de Interação
 
 Inserido o documento "Relatório Atualizado - Sprint 3.docx"
+
+Inserido o documento "Relatório Atualizado - Sprint 4.docx"
