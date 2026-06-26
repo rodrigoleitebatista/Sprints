@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet & Cia | Notificações</title>
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS próprio do projeto -->
+    <link href="../assets/estilo.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="pc-app">
+      <!-- ===================== SIDEBAR ===================== -->
+      <aside class="pc-sidebar" id="sidebar">
+        <div class="pc-logo">
+          <img src="../images/logo_PetCia.png" alt="Logo Pet & Cia" />
+          <div class="pc-logo-text"></div>
+        </div>
+
+        <ul class="pc-nav">
+          <li>
+            <a href="index.html">
+              <img src="../images/menu_Home.png" alt="" />
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <img src="../images/menu_Fila.png" alt="" />
+              Fila
+            </a>
+          </li>
+          <li>
+            <a href="atendimento.html">
+              <img src="../images/menu_Atendimentos.png" alt="" />
+              Atendimentos
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../images/menu_Calendario.png" alt="" />
+              Calendário
+            </a>
+          </li>
+          <li>
+            <a href="notificacoes.html" class="active">
+              <img src="../images/menu_Notificacoes.png" alt="" />
+              Notificações
+              <span class="pc-badge">3</span>
+            </a>
+          </li>
+          <li>
+            <a href="meupet.html">
+              <img src="../images/menu_MeuPet.png" alt="" />
+              Meu Pet
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../images/menu_Relatorios.png" alt="" />
+              Relatórios
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../images/menu_Configuracoes.png" alt="" />
+              Configurações
+            </a>
+          </li>
+        </ul>
+
+        <div class="pc-user-box">
+          <img src="../images/usuario_Richard.jpg" alt="Mariana A." />
+          <div>
+            <strong>Richard R.</strong>
+            <span>Funcionário</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ===================== CONTEÚDO ===================== -->
+      <main class="pc-main">
+        <div class="d-flex align-items-center mb-3">
+          <button
+            class="pc-mobile-toggle"
+            id="sidebarToggle"
+            type="button"
+            aria-label="Abrir menu"
+          >
+            <img src="../images/icone_menu.png" alt="" width="20" height="20" />
+          </button>
+        </div>
+
+        <div style="max-width: 680px">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="pc-page-title mb-0">Notificações</span>
+            <button class="pc-bell pc-filter-btn" type="button" title="Filtrar">
+              <img src="../images/icone_Filtro.png" alt="Filtrar" />
+            </button>
+          </div>
+
+          <div class="pc-card">
+            <!-- Abas -->
+            <div class="pc-notif-tabs">
+              <span class="pc-notif-tab active">Todas (4)</span>
+              <span class="pc-notif-tab">Não lidas (2)</span>
+              <span class="pc-notif-tab">Importantes</span>
+            </div>
+
+            <!-- Lista -->
+            <div>
+              <a
+                href="acompanhamento.html?pet=luna"
+                class="pc-notif-item text-reset text-decoration-none"
+              >
+                <div
+                  class="pc-notif-icon"
+                  style="background: var(--pc-green-light)"
+                >
+                  <img src="../images/icone_Whatsapp.png" alt="" />
+                </div>
+                <div class="pc-notif-content">
+                  <strong>Luna está em tosa.</strong>
+                  <span>Enviado para Mariana A.</span>
+                </div>
+                <div class="pc-notif-time">
+                  <span class="pc-notif-dot"></span> 09:45
+                </div>
+              </a>
+
+              <a
+                href="atendimento.html?pet=luna"
+                class="pc-notif-item text-reset text-decoration-none"
+              >
+                <div class="pc-notif-icon bg-tosa">
+                  <img src="../images/icone_Celular.png" alt="" />
+                </div>
+                <div class="pc-notif-content">
+                  <strong>Foto enviada de Luna.</strong>
+                  <span>Enviado para Mariana A.</span>
+                </div>
+                <div class="pc-notif-time">
+                  <span class="pc-notif-dot"></span> 09:47
+                </div>
+              </a>
+
+              <a
+                href="atendimento.html?pet=dudinha"
+                class="pc-notif-item text-reset text-decoration-none"
+              >
+                <div class="pc-notif-icon bg-finalizado">
+                  <img src="../images/card_Finalizados.png" alt="" />
+                </div>
+                <div class="pc-notif-content">
+                  <strong>Dudinha – Atendimento finalizado.</strong>
+                  <span>Enviado para Ana L.</span>
+                </div>
+                <div class="pc-notif-time">09:00</div>
+              </a>
+
+              <a
+                href="atendimento.html?pet=rex"
+                class="pc-notif-item text-reset text-decoration-none"
+              >
+                <div class="pc-notif-icon bg-banho">
+                  <img src="../images/card_EmBanho.png" alt="" />
+                </div>
+                <div class="pc-notif-content">
+                  <strong>Rex em banho.</strong>
+                  <span>Enviado para João P.</span>
+                </div>
+                <div class="pc-notif-time">09:20</div>
+              </a>
+            </div>
+
+            <div class="text-center mt-3">
+              <a href="#" class="fw-bold text-success text-decoration-none"
+                >VER TODAS &nbsp;›</a
+              >
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Bootstrap JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document
+        .getElementById("sidebarToggle")
+        ?.addEventListener("click", function () {
+          document.getElementById("sidebar").classList.toggle("open");
+        });
+    </script>
+  </body>
+</html>
